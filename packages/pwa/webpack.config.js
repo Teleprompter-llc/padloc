@@ -56,6 +56,12 @@ module.exports = {
             {
                 test: /\.ts$/,
                 loader: "ts-loader",
+                options: {
+                    transpileOnly: true,
+                    compilerOptions: {
+                        skipLibCheck: true
+                    }
+                }
             },
             {
                 test: /\.css$/,

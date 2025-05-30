@@ -11,9 +11,9 @@ import { OrgProvisioning } from "@padloc/core/src/provisioning";
 
 export class ScimServerConfig extends Config {
     @ConfigParam()
-    url = "http://localhost:5001";
+    url = "http://localhost:5000";
     @ConfigParam("number")
-    port: number = 5001;
+    port: number = 5000;
 }
 
 interface ScimUserEmail {
